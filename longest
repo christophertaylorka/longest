@@ -1,0 +1,14 @@
+function findLongestWord(sentence) {
+  let words = sentence.split(" ");
+  let longestWord = "";
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > longestWord.length) {
+      longestWord = words[i];
+    }
+  }
+  return longestWord;
+}
+
+let sentence = "This is a sample sentence to find the longest word.";
+let longestWord = findLongestWord(sentence);
+console.log("The longest word is:", longestWord);
